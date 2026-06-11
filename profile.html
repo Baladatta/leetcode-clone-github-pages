@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Clone | Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="profile-page">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span>LC</span>Code</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="contests.html">Contest</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container profile-panel">
+    <section class="profile-header glass">
+      <div class="profile-avatar">
+        <span>JS</span>
+      </div>
+      <div>
+        <span class="eyebrow">User Profile</span>
+        <h1>Jane Doe</h1>
+        <p>#1247 • Python Enthusiast • Full-stack Solver</p>
+      </div>
+      <div class="profile-rank glass small-card">
+        <span>Rank</span>
+        <strong>Gold III</strong>
+      </div>
+    </section>
+
+    <section class="dashboard-section stats-grid">
+      <article class="stat-card glass">
+        <h3>Total Solved</h3>
+        <p>1,184</p>
+      </article>
+      <article class="stat-card glass">
+        <h3>Easy Solved</h3>
+        <p>564</p>
+      </article>
+      <article class="stat-card glass">
+        <h3>Medium Solved</h3>
+        <p>426</p>
+      </article>
+      <article class="stat-card glass">
+        <h3>Hard Solved</h3>
+        <p>194</p>
+      </article>
+      <article class="stat-card glass">
+        <h3>Current Streak</h3>
+        <p>18 days</p>
+      </article>
+    </section>
+
+    <section class="skills-activity grid-two">
+      <article class="glass">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Strengths based on recent submission history</p>
+        </div>
+        <div class="skills-list">
+          <span class="skill-badge">Dynamic Programming</span>
+          <span class="skill-badge">Graphs</span>
+          <span class="skill-badge">Recursion</span>
+          <span class="skill-badge">Greedy</span>
+          <span class="skill-badge">Data Structures</span>
+        </div>
+      </article>
+
+      <article class="glass">
+        <div class="section-title">
+          <h2>Recent Activity</h2>
+          <p>Latest efforts and contest participation</p>
+        </div>
+        <ul class="activity-list">
+          <li>Completed <strong>Merge Intervals</strong> — Accepted</li>
+          <li>Reviewed <strong>Top K Frequent Elements</strong></li>
+          <li>Participated in <strong>Graph Theory Grand Prix</strong></li>
+          <li>Improved score in <strong>Longest Increasing Subsequence</strong></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="heatmap-panel glass">
+      <div class="section-title">
+        <h2>Contribution Heatmap</h2>
+        <p>Activity over the last year.</p>
+      </div>
+      <div id="heatmap-grid" class="heatmap-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Track your profile and progress with a polished stats dashboard.</p>
+  </footer>
+</body>
+</html>

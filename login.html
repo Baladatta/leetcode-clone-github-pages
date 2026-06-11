@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Clone | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="auth-page">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span>LC</span>Code</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="contests.html">Contest</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container auth-panel">
+    <section class="auth-info glass">
+      <span class="eyebrow">Welcome back</span>
+      <h1>Solve problems, track your progress.</h1>
+      <p>Use the authentication panel to sign in or create a new account. No backend needed—this is a UI-only demo.</p>
+      <div class="auth-actions">
+        <button class="tab-btn active" data-target="login-form">Login</button>
+        <button class="tab-btn" data-target="signup-form">Signup</button>
+      </div>
+    </section>
+
+    <section class="auth-forms glass">
+      <form id="login-form" class="form-panel active" novalidate>
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" required minlength="6">
+          <span class="error-message"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
+
+      <form id="signup-form" class="form-panel" novalidate>
+        <h2>Create Account</h2>
+        <div class="input-group">
+          <label for="signup-name">Username</label>
+          <input type="text" id="signup-name" placeholder="Jane Doe" required minlength="3">
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="you@example.com" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="••••••••" required minlength="8">
+          <span class="error-message"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">Create account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Login / signup UI designed for animated form interaction.</p>
+  </footer>
+</body>
+</html>
